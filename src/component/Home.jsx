@@ -21,13 +21,7 @@ export default function Home() {
             src="/images/Toyeeb.png"
             alt=""
             className="animate-scaleout"
-            // style={{
-            //   width: "100%",
-            //   backgroundSize: "60%",
-            //   backgroundRepeat: "no-repeat",
-            //   backgroundPosition: "center",
-
-            // }}
+            loading="eager"
           />
           <div>
             <div className="uiux hang animate-slideIn">UI/UX Designer</div>

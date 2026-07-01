@@ -6,6 +6,7 @@ import { FaLaptopCode, FaGears } from "react-icons/fa6";
 import { LuBrainCircuit } from "react-icons/lu";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import { useState, useEffect } from "react";
+
 const images = [
   "/images/UIUX 1.png",
   "/images/design-img2.jfif",
@@ -23,6 +24,7 @@ export default function Services() {
 
     return () => clearInterval(interval);
   }, []);
+
   return (
     <div className="services section-p1 section-m1 animate-moveup">
       <h5>MY SERVICES</h5>
@@ -115,6 +117,7 @@ export default function Services() {
               key={index}
               src={img}
               alt="Service showcase"
+              loading="eager"
               className={index === current ? "active" : ""}
             />
           ))}

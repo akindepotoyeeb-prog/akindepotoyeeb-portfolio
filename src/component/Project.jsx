@@ -65,7 +65,7 @@ export default function Project() {
           </div>
         </div>
         <div className="image">
-          <img src="/images/full-stack.png" alt="" />
+          <img src="/images/full-stack.png" alt="full stack image" loading="eager" />
           <div className="des">
             <div>
               <h5>Full-Stack Projects</h5>

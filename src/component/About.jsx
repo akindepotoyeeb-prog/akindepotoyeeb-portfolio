@@ -41,7 +41,7 @@ export default function About() {
       <h4>Turning Ideas into Meaningful Digital Experiences</h4>
       <div className="hero-left about-left">
         <div className="about-visual">
-          <img src="/images/Toyeeb.png" alt="profile" className="profile" />
+          <img src="/images/Toyeeb.png" alt="profile" className="profile" loading="eager" />
 
           <motion.div
             className="orbit-ring orbit-left"
