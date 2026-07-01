@@ -106,9 +106,9 @@ button.white {
   height: 48px;
   border: none;
   border-radius: 50%;
-  background-color: #2563eb;
-  color: #fff;
-  font-size: 18px;
+  background-color: #2564eb5a;
+  color: #1d4ed8;
+  font-size: 15px;
   cursor: pointer;
   box-shadow: 0 12px 24px rgba(37, 99, 235, 0.2);
   transition:
