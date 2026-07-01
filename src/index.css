@@ -23,7 +23,7 @@ html {
 
 body {
   width: 100%;
-  max-width: 1440px;
+  /* max-width: 1440px; */
   margin: 0 auto;
   /* background-color: aqua; */
 }
@@ -116,7 +116,6 @@ button.white {
     opacity 0.2s ease;
   z-index: 1000;
 }
-
 .back-to-top:hover {
   transform: translateY(-3px);
   opacity: 0.95;
