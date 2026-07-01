@@ -107,13 +107,13 @@ export default function App() {
         <Services />
       </div>
       <div id="project" ref={projectRef}>
-        <Project />
+        {/* <Project /> */}
       </div>
       <div id="about" ref={aboutRef}>
-        <About />
+        {/* <About /> */}
       </div>
       <div id="contact" ref={contactRef}>
-        <ContactMe />
+        {/* <ContactMe /> */}
       </div>
     </>
   );
