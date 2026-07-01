@@ -66,7 +66,7 @@ export default function ContactMe() {
 
             <a
               className="info-card"
-              href="https://akindepotoyeeb.netlify.app"
+              href="https://akindepo-toyeeb-portfolio.netlify.app"
               target="_blank"
               rel="noreferrer"
             >
@@ -75,7 +75,7 @@ export default function ContactMe() {
               </span>
               <span>
                 <strong>Website</strong>
-                <small>akindepotoyeeb.netlify.app</small>
+                <small>akindepo-toyeeb-portfolio.netlify.app</small>
               </span>
             </a>
 

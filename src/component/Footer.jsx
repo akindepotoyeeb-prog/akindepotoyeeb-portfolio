@@ -46,7 +46,7 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href="https://akindepotoyeeb.netlify.app"
+                href="https://akindepo-toyeeb-portfolio.netlify.app"
                 target="_blank"
                 rel="noreferrer"
                 className="footer-contact-item"
@@ -54,7 +54,7 @@ export default function Footer() {
                 <span className="footer-icon">
                   <FaGlobe />
                 </span>
-                <small>akindepotoyeeb.netlify.app</small>
+                <small>akindepo-toyeeb-portfolio.netlify.app</small>
               </a>
             </li>
             <li>

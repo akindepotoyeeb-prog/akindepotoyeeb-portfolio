@@ -22,9 +22,10 @@ html {
 }
 
 body {
+  max-width: 1440px;
   width: 100%;
-  /* max-width: 1440px; */
   margin: 0 auto;
+  overflow-x: hidden;
   /* background-color: aqua; */
 }
 
@@ -91,7 +92,7 @@ button.white {
 
 .all {
   width: 100%;
-
+  max-width: 1440px;
   margin: 0 auto;
   align-items: center;
   justify-content: center;
@@ -257,22 +258,24 @@ button.white {
 
 .home {
   width: 100%;
-  /* padding: 0 80px; */
-  /* height: 90vh; */
+  max-width: 1440px;
+  margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  gap: 40px;
   position: relative;
+  padding: 40px 80px;
 }
 
 .hero {
-  width: 50%;
+  width: min(560px, 100%);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   flex-wrap: wrap;
   text-wrap: initial;
   padding: 90px 0 40px 0;
-  /* justify-content: center; */
 }
 .hero h2 {
   margin-bottom: 30px;
@@ -286,7 +289,7 @@ button.white {
 }
 
 .hero p {
-  width: 500px;
+  max-width: 100%;
 }
 .hero button {
   background-color: #2563eb;
@@ -294,11 +297,10 @@ button.white {
   margin-top: 20px;
 }
 .hero-left {
-  width: 50%;
+  width: min(560px, 100%);
   display: flex;
   justify-content: center;
   position: relative;
-  /* border: 1px solid #000; */
 }
 
 .circle {
@@ -308,11 +310,13 @@ button.white {
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   position: absolute;
   top: 150px;
-  left: center;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: -1;
 }
 .homeImg {
-  width: 600px;
+  width: min(600px, 100%);
+  max-width: 600px;
   height: 540px;
   overflow: hidden;
   display: flex;
@@ -323,7 +327,7 @@ button.white {
 
 .homeImg img {
   width: 100%;
-  height: 100%;
+  height: 540px;
   object-fit: cover;
 
   /* crop image  */
@@ -685,8 +689,6 @@ marquee {
 
 .about-visual .orbit-ring {
   position: absolute;
-  top: center;
-  left: center;
   inset: 0;
   border-radius: 50%;
   border: 1px solid rgba(37, 99, 235, 0.18);
@@ -1876,6 +1878,27 @@ marquee {
                   Mobile View
   ============================================= */
 
+@media (max-width: 1024px) {
+  .home {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 16px;
+  }
+  .hero,
+  .hero-left {
+    width: 100%;
+  }
+  .homeImg {
+    width: 100%;
+    max-width: 100%;
+  }
+  .circle {
+    width: 320px;
+    height: 320px;
+    top: 120px;
+  }
+}
+
 @media (max-width: 426px) {
   body {
     width: 100%;
@@ -1930,7 +1953,8 @@ marquee {
     height: 300px;
 
     top: 150px;
-    left: center;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: -1;
   }
   .hero-left {
@@ -2220,7 +2244,7 @@ marquee {
   .animate-scaleout,
   .animate-dropdown,
   .animate-moveup {
-    opacity: 0;
+    opacity: 1;
   }
 
   .visible.animate-slideIn {
