@@ -110,7 +110,7 @@ button.white {
   opacity: 0.95;
 }
 
-header{
+header {
   background-color: #d8d9dc;
   position: sticky;
   top: 0;
@@ -119,7 +119,7 @@ header{
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
 }
 
-.header {
+.header-container {
   display: flex;
   justify-content: space-between;
   padding: 20px 80px;
@@ -185,7 +185,7 @@ header{
   align-items: center;
 }
 
-.header a {
+.header-container a {
   text-decoration: none;
 }
 
@@ -249,6 +249,9 @@ header{
 /*====================================================
                     Home Page
 =====================================================*/
+main {
+  position: relative;
+}
 
 .home {
   width: 100%;
@@ -356,13 +359,20 @@ header{
   top: 350px;
   right: 0px;
 }
+.marq-div {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  background-color: #7c3aed;
+  text-align: center;
+}
 marquee {
   width: 100%;
-  padding: 7px 0;
+  max-width: 1280px;
+  overflow: hidden;
+  padding: 7px 80px;
   /* height: 50px; */
-  position: absolute;
-  bottom: 15px;
-  left: 0;
   font-size: x-large;
   color: white;
   word-spacing: 50px;
@@ -372,10 +382,12 @@ marquee {
                     Services Page
 =====================================================*/
 .services {
+  max-width: 1440px;
   width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin: auto;
 }
 .services h5 {
   font-size: 15px;
@@ -415,6 +427,8 @@ marquee {
 }
 .skill {
   width: 100%;
+  height: 90px;
+  align-items: center;
   /* height: 90px; */
   border: 1px solid rgba(37, 100, 235, 0.2);
   border-radius: 6px;
@@ -527,10 +541,12 @@ marquee {
                     Project Page
 =====================================================*/
 .project {
+  max-width: 1440px;
   width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin: auto;
 }
 .project h2 {
   letter-spacing: 0.2em;
@@ -625,6 +641,8 @@ marquee {
                     About Page
 =====================================================*/
 .about {
+  max-width: 1440px;
+  margin: auto;
   width: 100%;
   height: 100%;
   display: flex;
@@ -651,7 +669,7 @@ marquee {
   width: 100%;
   height: 100%;
   display: flex;
-  gap: 10px;
+  gap: 40px;
   justify-content: center;
 }
 
@@ -691,15 +709,15 @@ marquee {
 }
 
 .about-visual .orbit-left {
-  width: 70%;
-  height: 88%;
+  width: 450px;
+  height: 450px;
   margin: auto;
   --orbit-distance: 225px;
 }
 
 .about-visual .orbit-right {
-  width: 59%;
-  height: 72%;
+  width: 360px;
+  height: 360px;
   margin: auto;
   border-color: rgba(56, 189, 248, 0.18);
   --orbit-distance: 175px;
@@ -727,7 +745,7 @@ marquee {
   display: inline-flex;
 }
 .about .about-right {
-  width: 40%;
+  width: 45%;
   /* height: 100%; */
   display: flex;
   justify-content: center;
@@ -889,13 +907,17 @@ marquee {
 /*====================================================
                     Contact Page
 =====================================================*/
+.contact {
+  width: 100%;
+}
 .contact-hire {
   width: 100%;
+  max-width: 1440px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   gap: 24px;
-  margin: 40px 0;
+  margin: auto;
 }
 
 .contact-hire .contact {
@@ -1112,11 +1134,14 @@ marquee {
 }
 
 .hire-banner {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  background: linear-gradient(135deg, #15223d, #5d728d);
+
   color: #fff;
   margin-bottom: 0px;
 }
@@ -1134,11 +1159,17 @@ marquee {
 /*====================================================
                     Footer Page
 =====================================================*/
-.footer-section {
-  width: 100%;
+
+footer {
   background: linear-gradient(135deg, #0f172a 0%, #111827 45%, #1f2937 100%);
+}
+
+.footer-section {
+  max-width: 1440px;
+  width: 100%;
   color: #eff6ff;
   padding: 32px 80px 18px;
+  margin: auto;
 }
 
 .footer-top {
@@ -1235,7 +1266,7 @@ marquee {
 }
 .footer-links a,
 .footer-social-links a {
-  color: #5882f4;
+  color: white;
   text-decoration: none;
   transition:
     color 0.2s ease,
@@ -1281,6 +1312,7 @@ marquee {
                       My details page
   ================================================== */
 .detail-page {
+  max-width: 1440px;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -1288,11 +1320,14 @@ marquee {
   gap: 24px;
 }
 .abt-flex {
+  max-width: 1440px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  padding: 20px 80px;
   justify-content: center;
   position: relative;
   align-items: center;
+  margin: auto;
 }
 
 .detail-page .detail-top,
@@ -1370,7 +1405,7 @@ marquee {
   align-items: center;
   gap: 8px;
   position: absolute;
-  left: 0;
+  left: 80px;
   top: 30%;
   height: fit-content;
   padding: 5px 7px;
@@ -1447,7 +1482,6 @@ marquee {
   justify-content: center;
   justify-items: center;
   gap: 40px;
-  padding: 20px 50px;
 }
 .detail-page .Edu div {
   width: 100%;
@@ -1463,6 +1497,8 @@ marquee {
                     Hire Me
 =====================================================*/
 .Hire-me {
+  width: 100%;
+  max-width: 1440px;
   border: 3px dashed transparent;
   border-radius: 30px;
   border-image: repeating-linear-gradient(
@@ -1483,14 +1519,14 @@ marquee {
 /* .Hire-me .hire-bg{
   background-image: url();
 } */
-.Hire-me .button.back-link {
+/* {
   top: -40px;
   left: -23%;
   align-items: start;
   gap: 4px;
 
   padding: 2px 5px;
-}
+} */
 
 .Hire-me h2 {
   text-align: center;
@@ -1502,6 +1538,11 @@ marquee {
 /*====================================================
                     UIUX Page
 =====================================================*/
+.detail-page {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+}
 .detail-page .pro-details {
   display: flex;
   justify-content: flex-start;
@@ -1553,6 +1594,7 @@ marquee {
 /*====================================================
                     media quary
 =====================================================*/
+
 @media (max-width: 980px) {
   .header {
     padding: 18px 24px;
@@ -1801,8 +1843,7 @@ marquee {
     font-weight: 500;
   }
   .contact-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 20px;
   }
   .contact-panel h3,
   .social-box h4 {
@@ -1818,7 +1859,6 @@ marquee {
   }
 
   .hire-banner {
-    flex-direction: column;
     align-items: flex-start;
   }
   /* footer */
@@ -1849,7 +1889,9 @@ marquee {
     margin-top: 0;
     margin-bottom: 3px;
   }
-
+  .detail-page p {
+    font-size: 8px;
+  }
   .detail-card li {
     padding: 12px 14px;
     border-radius: 10px;
@@ -1866,32 +1908,349 @@ marquee {
     line-height: 1.3;
     font-size: 12px;
   }
+  .abt-flex {
+    max-width: 768px;
+    width: 100%;
+    display: flex;
+    padding: 20px 40px;
+  }
+  .button.back-link {
+    gap: 4px;
+    padding: 3px 5px;
+    font-size: 10px;
+    top: 30%;
+    left: 40px;
+  }
+}
+
+@media (max-width: 980px) {
+  .section-p1 {
+    padding: 20px 40px;
+  }
+  .header-container {
+    padding: 20px 40px;
+    max-width: 768px;
+    margin: auto;
+  }
+
+  .nav {
+    gap: 16px;
+  }
+
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: -500px;
+    width: 250px;
+    height: 100vh;
+    /* padding: 40px 20px; */
+    background-color: #f8f9fb;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+    box-shadow: -4px 0 30px rgba(0, 0, 0, 0.08);
+    margin: 0;
+  }
+  #navbar h3 {
+    display: initial;
+    text-align: center;
+    padding: 10px;
+  }
+  #navbar.active {
+    transform: translateX(0);
+    left: 0;
+  }
+  #navbar li {
+    padding: 9px 10px 9px 20px;
+    margin-bottom: 0px;
+    width: 100%;
+  }
+  #navbar li:hover {
+    background-color: #b5c9f5;
+  }
+
+  .hire #menu {
+    display: initial;
+    color: #1d4ed8;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #HR {
+    display: none;
+  }
+
+  main {
+    width: 100%;
+  }
+  .home {
+    max-width: 769px;
+    width: 100%;
+    flex-direction: row;
+    padding: 40px 40px;
+  }
+
+  .hero,
+  .hero-left {
+    width: 45%;
+  }
+
+  .hero {
+    padding: 80px 0 30px 0;
+  }
+
+  .hero h2 {
+    font-size: 20px;
+    line-height: 1.1;
+    margin-bottom: 18px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+    line-height: 1.05;
+  }
+
+  .hero p {
+    font-size: 13px;
+    width: 90%;
+  }
+
+  .hero button.normal {
+    padding: 12px 20px;
+  }
+
+  .homeImg {
+    width: 100%;
+  }
+
+  .homeImg img {
+    width: 100%;
+
+    object-fit: cover;
+    object-position: center 10%;
+  }
+
+  .circle {
+    width: 320px;
+    height: 320px;
+    top: 150px;
+  }
+
+  .hang {
+    padding: 6px 10px;
+    font-size: 0.95rem;
+  }
+
+  .uiux {
+    top: 210px;
+    left: 20px;
+  }
+
+  .frontend {
+    top: 320px;
+    left: 10px;
+  }
+
+  .backend {
+    top: 260px;
+    right: 10px;
+  }
+
+  .marq-div {
+    height: fit-content;
+    bottom: 15px;
+  }
+  .marq-div marquee {
+    padding: 4px 20px;
+    font-size: 1rem;
+    word-spacing: 35px;
+  }
+  .services {
+    max-width: 769px;
+    width: 100%;
+  }
+  .serviceCon {
+    align-items: center;
+    gap: 24px;
+  }
+
+  .service-left {
+    width: 100%;
+  }
+  .delIt h5 {
+    text-align: start;
+    font-size: 10px;
+    letter-spacing: 0;
+  }
+  .delIt p {
+    font-size: 8px;
+    font-weight: 600;
+    margin-bottom: 3px;
+  }
+  .skill {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .details {
+    width: 100%;
+    padding: 16px 0 0 0;
+  }
+
+  .delIt {
+    width: 100%;
+    padding: 18px 0 0 0;
+  }
+
+  .serviceCon .image {
+    width: 100%;
+    max-width: 720px;
+    height: 320px;
+  }
+
+  .projectCon {
+    align-items: center;
+    gap: 24px;
+  }
+
+  .image .des {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .image .des p {
+    margin-bottom: 0;
+  }
+  /* about */
+  .about {
+    max-width: 769px;
+  }
+  .about h4 {
+    font-size: 16px;
+  }
+  .about .about-left {
+    align-items: center;
+    gap: 24px;
+  }
+
+  .about-visual {
+    width: 50%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .about-visual .profile {
+    width: 240px;
+    height: 240px;
+    margin: 0 auto;
+  }
+
+  .about-visual .orbit-left {
+    width: 330px;
+    height: 330px;
+    left: 0;
+    --orbit-distance: 170px;
+  }
+
+  .about-visual .orbit-right {
+    width: 280px;
+    height: 280px;
+    --orbit-distance: 140px;
+  }
+
+  .about-visual .orbit-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .about-right {
+    width: 100%;
+    max-width: 720px;
+  }
+
+  .about-right h2 {
+    font-size: 14px;
+    margin-bottom: 5px;
+    line-height: 18px;
+  }
+
+  .about-right p {
+    font-size: 12px;
+  }
+
+  .about-right .skills h5 {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .about-right .skills ul li {
+    font-size: 0.6rem;
+  }
+  .about-right .scope .client h2,
+  .about-right .scope .project h2 {
+    margin-top: 0px;
+    font-weight: 700;
+    font-size: 25px;
+  }
+  .about-right .scope {
+    gap: 20px;
+  }
+
+  .about .about-right .button {
+    width: 40%;
+    font-size: 12px;
+  }
+
+  .contact-panel {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .contact-intro h2 {
+    font-size: 1.2rem;
+  }
+
+  .contact-intro p {
+    font-size: 14px;
+  }
 }
 
 /* ============================================
                   Mobile View
   ============================================= */
 
-@media (max-width: 1024px) {
+/* @media (max-width: 769px) {
   .home {
-    flex-direction: column;
+    max-width: 769px;
+
     gap: 20px;
-    padding: 0 16px;
+
+    padding: 40px 40px;
   }
   .hero,
   .hero-left {
-    width: 100%;
+    width: 50%;
   }
   .homeImg {
-    width: 100%;
-    max-width: 100%;
+    width: 50%;
   }
   .circle {
     width: 320px;
     height: 320px;
     top: 120px;
   }
-}
+  h2 {
+    font-size: 20px;
+    line-height: 34px;
+  }
+} */
 
 @media (max-width: 426px) {
   body {
@@ -1901,11 +2260,11 @@ marquee {
     padding: 10px 20px;
   }
   /* header */
-  .header {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 10px 24px;
-  }
+  .header-container {
+    padding: 10px 20px;
+    max-width: 426px;
+    margin: auto;
+}
 
   .header a,
   .hire {
@@ -1914,16 +2273,21 @@ marquee {
 
   #navbar {
     /* width: 100%; */
-    height: 100%;
+    height: 80%;
     width: 250px;
   }
   /* home */
   .home {
+    width: 100%;
+    height: 100vh;
+    max-width: 426px;
+    margin: auto;
     padding: 0;
+    gap: 0;
   }
   .hero {
-    width: 55%;
-    padding: 80px 0 30px 20px;
+    width: 100%;
+    padding: 150px 0 70px 20px;
   }
   .hero h2 {
     margin-bottom: 7px;
@@ -1943,16 +2307,16 @@ marquee {
     padding: 10px 20px;
   }
   .circle {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
 
-    top: 150px;
-    left: 50%;
+    top: -100px;
+    left: 70%;
     transform: translateX(-50%);
     z-index: -1;
   }
   .hero-left {
-    width: 55%;
+    width: 100%;
     z-index: -1;
   }
   .homeImg {
@@ -1963,6 +2327,7 @@ marquee {
     width: 100%;
     object-fit: cover;
     object-position: 40% 50%;
+    display: none;
   }
   .uiux {
     display: none;
@@ -1973,19 +2338,26 @@ marquee {
   .backend {
     display: none;
   }
+  .marq-div {
+    height: fit-content;
+  }
 
-  marquee {
+  .marq-div marquee {
     bottom: 0px;
-    padding: 4px;
+    padding: 2px 10px;
     /* height: 50px; */
-    font-size: small;
-    word-spacing: 30px;
+    font-size: 10px;
+    word-spacing: 20px;
   }
   /* services */
   .services h5,
   .project h2,
   .about h2 {
     font-size: 13px;
+    width: 100%;
+  }
+  .services h3 {
+    width: 100%;
   }
   .services h3,
   .project h4,
@@ -1999,10 +2371,32 @@ marquee {
     flex-direction: column;
   }
   .service-left {
-    width: 80%;
+    width: 100%;
 
     gap: 20px;
   }
+  .serviceCon .image {
+    width: 90%;
+    max-width: 426px;
+    height: 270px;
+}
+.projectCon {
+
+    padding: 10px 0;
+    gap: 0;
+  
+}
+.projectCon .image {
+    width: 25%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7de;
+    border-radius: 25px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
   /* About */
   .about .about-left {
     flex-direction: column;
@@ -2014,17 +2408,22 @@ marquee {
     left: 0px;
   }
   .about-visual .orbit-left {
-    width: 360px;
-    height: 360px;
-    top: -3px;
-    left: -3px;
-    --orbit-distance: 180px;
-  }
-  .about-visual .orbit-right {
     width: 290px;
     height: 290px;
-    --orbit-distance: 145px;
+    top: -3px;
+    left: -3px;
+    --orbit-distance: 150px;
   }
+  .about-visual .orbit-right {
+    width: 230px;
+    height: 230px;
+    --orbit-distance: 115px;
+  }
+  .about-visual .profile {
+    width: 190px;
+    height: 190px;
+    margin: 0 auto;
+}
   .about-right .scope {
     gap: 2px;
     margin-bottom: 10px;
@@ -2038,15 +2437,15 @@ marquee {
   }
   .about-right .scope .client p,
   .about-right .scope .project p {
-    font-size: small;
+    font-size: 10px;
   }
   .about-right .scope .client h2,
   .about-right .scope .project h2 {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 20px;
   }
   .about .about-right .button {
-    width: 30%;
+    width: 40%;
     font-size: 11px;
     font-weight: 500;
   }
@@ -2067,6 +2466,10 @@ marquee {
   .contact-panel {
     padding: 10px 20px;
   }
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 
   .info-card {
     align-items: flex-start;
@@ -2083,6 +2486,10 @@ marquee {
     padding: 7px 15px;
     font-weight: 600;
   }
+  .hire-banner {
+    align-items: flex-start;
+    flex-direction: column;
+}
   /* footer */
   .footer-section {
     padding: 24px 20px;

@@ -16,7 +16,7 @@ export default function Header({ activeSection, scrollTo, refs }) {
 
   return (
     <header className="">
-      <div className="header">
+      <div className="header-container">
         <a href="#">
           <div className="logo">AT</div>
         </a>
