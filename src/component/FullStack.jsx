@@ -8,7 +8,7 @@ export default function FullStack() {
       <div style={{ width: "100%", backgroundColor: "#c3c3c3" }}>
         <div className="abt-flex animate-slideIn">
           <Link to="/" className="button back-link">
-            <HiOutlineArrowNarrowLeft /> Back to home
+            <HiOutlineArrowNarrowLeft /> <span>Back to home</span>
           </Link>
           <h2 className="animate-dropdown">Full-Stack Development</h2>
         </div>

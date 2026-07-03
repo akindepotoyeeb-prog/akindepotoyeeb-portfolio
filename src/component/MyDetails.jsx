@@ -60,7 +60,7 @@ export default function MyDetails() {
       <div style={{width: '100%', backgroundColor: "#c3c3c3"}}>
         <div className="abt-flex animate-slideIn">
           <Link to="/" className="button back-link">
-            <HiOutlineArrowNarrowLeft /> Back to home
+            <HiOutlineArrowNarrowLeft /> <span>Back to home</span>
           </Link>
           <h2 className="animate-dropdown">About Me</h2>
         </div>

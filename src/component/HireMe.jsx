@@ -36,7 +36,7 @@ export default function HireMe() {
           transition={{ duration: 0.5, delay: 0.1 }}
         >
           <Link to="/" className="button back-link">
-            <HiOutlineArrowNarrowLeft /> Back to home
+            <HiOutlineArrowNarrowLeft /> <span>Back to home</span>
           </Link>
           <h2 className="animate-dropdown">Hire Me</h2>
         </motion.div>
