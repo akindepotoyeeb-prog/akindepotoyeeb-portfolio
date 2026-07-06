@@ -8,7 +8,7 @@ export default function FrontEnd() {
       <div style={{ width: "100%", backgroundColor: "#c3c3c3" }}>
         <div className="abt-flex animate-slideIn">
           <Link to="/" className="button back-link">
-            <HiOutlineArrowNarrowLeft /> <span>Back to home</span>
+            <HiOutlineArrowNarrowLeft /> <span>Back</span>
           </Link>
           <h2 className="animate-dropdown">Front-End Development</h2>
         </div>

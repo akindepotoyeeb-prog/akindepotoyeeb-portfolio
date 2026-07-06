@@ -57,10 +57,10 @@ export default function MyDetails() {
 
   return (
     <section style={{ width: "100%" }}>
-      <div style={{width: '100%', backgroundColor: "#c3c3c3"}}>
+      <div style={{ width: "100%", backgroundColor: "#c3c3c3" }}>
         <div className="abt-flex animate-slideIn">
           <Link to="/" className="button back-link">
-            <HiOutlineArrowNarrowLeft /> <span>Back to home</span>
+            <HiOutlineArrowNarrowLeft /> <span>Back</span>
           </Link>
           <h2 className="animate-dropdown">About Me</h2>
         </div>
@@ -70,26 +70,8 @@ export default function MyDetails() {
           <div className="dleft">
             <div className="paragaph">
               <div className="ppp">
-                <div
-                  style={{
-                    display: "flex",
-                    width: "200px",
-                    height: "200px",
-                    padding: "4px",
-                    flexWrap: "wrap",
-                    borderRadius: "10px",
-                    border: "1px solid #1d4ed833",
-                  }}
-                >
-                  <img
-                    src="/images/Toyeeb-pics.jpg"
-                    alt=""
-                    style={{
-                      width: "100%",
-                      // height: "auto",
-                      borderRadius: "10px",
-                    }}
-                  />
+                <div className="image-wrap">
+                  <img src="/images/Toyeeb-pics.jpg" alt="about-image" />
                 </div>
                 <div className="about-text">
                   <h4>Hi, I'm Toyeeb</h4>

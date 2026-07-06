@@ -134,7 +134,7 @@ export default function About() {
                 <h2>52+</h2>
               </div>
             </div>
-            <Link to="/"  className="button read normal">
+            <Link to="/my-details"  className="button read normal">
               READ MORE
               <div>
                 <HiOutlineArrowNarrowRight />
