@@ -35,7 +35,7 @@ export default function ContactMe() {
   };
 
   return (
-    <section className="contact animate-moveup" id="contact-page">
+    <section className="animate-moveup" id="contact-page">
       <div className="contact-hire section-p1">
         <div className="contact-intro">
           <p className="eyebrow">Contact</p>

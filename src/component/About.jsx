@@ -40,7 +40,7 @@ export default function About() {
       <div className="about section-p1 section-m1 animate-moveup">
         <h2>ABOUT ME</h2>
         <h4>Turning Ideas into Meaningful Digital Experiences</h4>
-        <div className="hero-left about-left">
+        <div className="about-left">
           <div className="about-visual">
             <img
               src="/images/Toyeeb.png"
