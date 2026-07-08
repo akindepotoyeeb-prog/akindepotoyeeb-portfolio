@@ -10,6 +10,7 @@ import {
   FaBehance,
   FaInstagram,
 } from "react-icons/fa6";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
 export default function ContactMe() {
   const form = useRef(null);
@@ -102,17 +103,25 @@ export default function ContactMe() {
                 justifyContent: "center",
               }}
             >
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243773.158492375!2d3.1191458148055795!3d6.548028244365821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e1!3m2!1sen!2sng!4v1782225202644!5m2!1sen!2sng"
-                width="100%"
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
+              <MapContainer
+                center={[6.675671876821929, 3.2648145585166213]} // Lagos
+                zoom={13}
                 style={{
+                 
+                  width: "100%",
+                  height: "200px",
                   border: 0,
                   borderRadius: "10px",
                 }}
-              ></iframe>
+              >
+                <TileLayer
+                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                />
+                {/* <Marker position={[6.675671876821929, 3.2648145585166213]}>
+                  <Popup>My Office</Popup>
+                </Marker> */}
+              </MapContainer>
 
               <div className="social-box">
                 <h4>Follow Me</h4>
@@ -211,22 +220,26 @@ export default function ContactMe() {
           </article>
         </div>
       </div>
-<div style={{width: "100%", background: "linear-gradient(135deg, #15223d, #5d728d)" }}>
-
-      <div className="hire-banner section-p1">
-        <div>
-          <p className="eyebrow">Ready to start?</p>
-          <h3>Have a project in mind?</h3>
-          <p>
-            I’d love to help you bring it to life with a modern, responsive
-            design.
-          </p>
+      <div
+        style={{
+          width: "100%",
+          background: "linear-gradient(135deg, #15223d, #5d728d)",
+        }}
+      >
+        <div className="hire-banner section-p1">
+          <div>
+            <p className="eyebrow">Ready to start?</p>
+            <h3>Have a project in mind?</h3>
+            <p>
+              I’d love to help you bring it to life with a modern, responsive
+              design.
+            </p>
+          </div>
+          <Link to="/hire-me" className="hire-btn">
+            Hire Me Now
+          </Link>
         </div>
-        <Link to="/hire-me" className="hire-btn">
-          Hire Me Now
-        </Link>
       </div>
-</div>
     </section>
   );
 }

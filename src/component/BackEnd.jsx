@@ -76,7 +76,7 @@ export default function BackEnd() {
           <h4>Projects</h4>
           <div className="projectCon">
             <div className="image">
-              <img src="/images/UIUX 2.png" alt="" />
+              <img src="/images/pro-images/e-commerce-img.png" alt="e-commerce" />
               <div className="des">
                 <div>
                   <h5>UI/UX Projects</h5>
@@ -91,7 +91,7 @@ export default function BackEnd() {
               </div>
             </div>
             <div className="image">
-              <img src="/images/frontend.png" alt="" />
+              <img src="/images/pro-images/weather-image.png" alt="" />
               <div className="des">
                 <div>
                   <h5>Frontend Projects</h5>

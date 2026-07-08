@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { HiOutlineArrowNarrowLeft } from "react-icons/hi";
@@ -76,7 +77,7 @@ export default function FrontEnd() {
           <h4>Projects</h4>
           <div className="projectCon">
             <div className="image">
-              <img src="/images/UIUX 2.png" alt="" />
+              <img src="/images/pro-images/e-commerce-img.png" alt="e-commerce" />
               <div className="des">
                 <div>
                   <h5>E-Commerce</h5>
@@ -91,7 +92,7 @@ export default function FrontEnd() {
               </div>
             </div>
             <div className="image">
-              <img src="/images/frontend.png" alt="" />
+              <img src="/images/frontend.png" alt="outfit" />
               <div className="des">
                 <div>
                   <h5>Outfyt</h5>
@@ -106,7 +107,7 @@ export default function FrontEnd() {
               </div>
             </div>
             <div className="image">
-              <img src="/images/backend.png" alt="" />
+              <img src="/images/pro-images/movieSearch-img.png" alt="movie-search" loading="eager" />
               <div className="des">
                 <div>
                   <h5>Movie Search</h5>
