@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { HiOutlineArrowNarrowLeft } from "react-icons/hi";
+import { MdOutlineConstruction } from "react-icons/md";
 
 export default function BackEnd() {
   return (
@@ -14,7 +15,46 @@ export default function BackEnd() {
         </div>
       </div>
       <div className="detail-page section-p1">
-        <div className="pro-details animate-moveup">
+        <div
+          style={{
+            textAlign: "center",
+            color: "#aaaaaa",
+            backgroundColor: "#ebebeb",
+            margin: "20px",
+            padding: "10px",
+            borderRadius: "15px",
+            border: "1px solid #aaaaaa",
+            
+          }}
+        >
+          <h1
+            style={{
+              textAlign: "center",
+              color: "#aaaaaa",
+              backgroundColor: "#ebebeb",
+              marginBottom: "10px",
+              padding: "10px",
+              fontSize: "30px",
+            }}
+          >
+            Under Constuction ⚒⛏
+          </h1>
+          <div
+            style={{
+              width: "200px",
+              height: "200px",
+              textAlign: "center",
+              color: "#aaaaaa",
+              margin: "auto",
+              fontSize: "200px",
+              borderRadius: "15px",
+              border: "1px solid #aaaaaa",
+            }}
+          >
+            <MdOutlineConstruction />
+          </div>
+        </div>
+        {/* <div className="pro-details animate-moveup">
           <div className="detail-top">
             <h4>Building Secure, Scalable & Reliable Backend Systems</h4>
             <p>
@@ -157,7 +197,7 @@ export default function BackEnd() {
               keep your application running smoothly.
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
