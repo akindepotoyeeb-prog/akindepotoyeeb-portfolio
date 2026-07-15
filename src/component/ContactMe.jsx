@@ -10,7 +10,7 @@ import {
   FaBehance,
   FaInstagram,
 } from "react-icons/fa6";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Circle, Popup } from "react-leaflet";
 
 export default function ContactMe() {
   const form = useRef(null);
@@ -104,7 +104,7 @@ export default function ContactMe() {
               }}
             >
               <MapContainer
-                center={[6.675671876821929, 3.2648145585166213]} // Lagos
+                center={[6.6194, 3.5105]} // Center of Ikorodu
                 zoom={13}
                 style={{
                   width: "100%",
@@ -115,9 +115,10 @@ export default function ContactMe() {
               >
                 <TileLayer
                   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                  attribution='&copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors'
                 />
-                <Marker position={[6.675671876821929, 3.2648145585166213]}>
+                {/* The marker now uses valid geographic coordinates instead of the postal code */}
+                <Marker position={[6.6194, 3.5105]}>
                   <Popup>My Office</Popup>
                 </Marker>
               </MapContainer>
