@@ -107,7 +107,6 @@ export default function ContactMe() {
                 center={[6.675671876821929, 3.2648145585166213]} // Lagos
                 zoom={13}
                 style={{
-                 
                   width: "100%",
                   height: "200px",
                   border: 0,
@@ -118,9 +117,9 @@ export default function ContactMe() {
                   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                   attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 />
-                {/* <Marker position={[6.675671876821929, 3.2648145585166213]}>
+                <Marker position={[6.675671876821929, 3.2648145585166213]}>
                   <Popup>My Office</Popup>
-                </Marker> */}
+                </Marker>
               </MapContainer>
 
               <div className="social-box">
