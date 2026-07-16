@@ -18,20 +18,18 @@ export default function FullStack() {
         <div
           style={{
             textAlign: "center",
-            color: "#aaaaaa",
-            backgroundColor: "#ebebeb",
+            color: "var(--brand-color)",
+            backgroundColor: "var(--box-bg)",
             margin: "20px",
             padding: "10px",
             borderRadius: "15px",
-            border: "1px solid #aaaaaa",
-            
+            border: "1px solid var(--border)",
           }}
         >
           <h1
             style={{
               textAlign: "center",
-              color: "#aaaaaa",
-              backgroundColor: "#ebebeb",
+              color: "var(--text-1)",
               marginBottom: "10px",
               padding: "10px",
               fontSize: "30px",
@@ -44,11 +42,11 @@ export default function FullStack() {
               width: "200px",
               height: "200px",
               textAlign: "center",
-              color: "#aaaaaa",
+              color: "var(--brand-color)",
               margin: "auto",
               fontSize: "200px",
               borderRadius: "15px",
-              border: "1px solid #aaaaaa",
+              border: "1px solid var(--border)",
             }}
           >
             <MdOutlineConstruction />

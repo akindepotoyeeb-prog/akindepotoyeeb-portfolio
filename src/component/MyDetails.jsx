@@ -168,18 +168,19 @@ export default function MyDetails() {
                       style={{
                         width: "100%",
                         height: "4px",
-                        backgroundColor: "#e3e3e3",
+                        backgroundColor: "var(--down-rag)",
                         borderRadius: "5px",
                         marginTop: "13px",
                         marginBottom: "6px",
                         cursor: "pointer",
+                        zIndex: "10",
                         overflow: "hidden",
                       }}
                     >
                       <div
                         className="animate-per-slideIn"
                         style={{
-                          backgroundColor: "#2563eb",
+                          backgroundColor: "var(--brand-color)",
                           width: skill.percentage,
                         }}
                         id=""
@@ -204,7 +205,7 @@ export default function MyDetails() {
                       style={{
                         width: "100%",
                         height: "4px",
-                        backgroundColor: "#e3e3e3",
+                        backgroundColor: "var(--down-rag)",
                         borderRadius: "5px",
                         marginTop: "13px",
                         marginBottom: "6px",
@@ -215,7 +216,7 @@ export default function MyDetails() {
                       <div
                         className="animate-per-slideIn"
                         style={{
-                          backgroundColor: "#2563eb",
+                          backgroundColor: "var(--brand-color)",
                           width: skill.percentage,
                         }}
                         id=""
@@ -240,7 +241,7 @@ export default function MyDetails() {
                       style={{
                         width: "100%",
                         height: "4px",
-                        backgroundColor: "#e3e3e3",
+                        backgroundColor: "var(--down-rag)",
                         borderRadius: "5px",
                         marginTop: "13px",
                         marginBottom: "6px",
@@ -251,7 +252,7 @@ export default function MyDetails() {
                       <div
                         className="animate-per-slideIn"
                         style={{
-                          backgroundColor: "#2563eb",
+                          backgroundColor: "var(--brand-color)",
                           width: skill.percentage,
                         }}
                         id=""

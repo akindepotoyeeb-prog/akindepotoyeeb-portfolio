@@ -1,11 +1,12 @@
 import React from "react";
 import { TiTimes } from "react-icons/ti";
-import { IoMenu } from "react-icons/io5";
+import { IoMenu, IoShirt, IoShirtOutline } from "react-icons/io5";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function Header({ activeSection, scrollTo, refs }) {
+export default function Header({ activeSection, scrollTo, refs, theme, toggleTheme, isThemeBouncing }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const isDark = theme === "dark";
 
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
   const closeMenu = () => setIsMenuOpen(false);
@@ -24,7 +25,7 @@ export default function Header({ activeSection, scrollTo, refs }) {
           <ul id="navbar" className={`navbar ${isMenuOpen ? "active" : ""}`}>
             <h3
               className="navname"
-              style={{ color: "#1d4ed8", marginBottom: "10px" }}
+              style={{ color: "var(--brand-color)", marginBottom: "10px" }}
             >
               Akindepo Toyeeb
             </h3>
@@ -74,19 +75,24 @@ export default function Header({ activeSection, scrollTo, refs }) {
               </button>
             </li>
             {/* <li className="close-wrapper" onClick={closeMenu}>
-            <button type="button" id="close" aria-label="Close menu">
-              <TiTimes
-                style={{
-                  color: "#1d4ed8",
-                  textAlign: "center",
-                  alignItems: "center",
-                }}
-              />{" "}
-              Cancel
-            </button>
+            
           </li> */}
           </ul>
           <div className="hire">
+
+            {/* Theme  */}
+
+
+            <button
+              type="button"
+              id="themeBtn"
+              aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
+              onClick={toggleTheme}
+            >
+              <span id="themeIcon" className={`theme-icon ${isThemeBouncing ? "theme-bounce" : ""}`}>
+                {isDark ? <IoShirtOutline /> : <IoShirt />}
+              </span>
+            </button>
             <button
               type="button"
               id="menu"

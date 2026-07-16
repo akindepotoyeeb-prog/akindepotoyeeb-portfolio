@@ -14,10 +14,19 @@ import BackEnd from "./component/BackEnd";
 import FullStack from "./component/FullStack";
 import HireMe from "./component/HireMe";
 import BackToTopButton from "./component/BackToTopButton";
+import {
+  applyTheme,
+  bounceThemeIcon,
+  getInitialTheme,
+  startThemeBounceTimer,
+  stopThemeBounceTimer,
+} from "./Theme/LightDarkMode";
 
 export default function App() {
   const [activeSection, setActiveSection] = useState("home");
   const [showTopButton, setShowTopButton] = useState(false);
+  const [theme, setTheme] = useState(getInitialTheme);
+  const [isThemeBouncing, setIsThemeBouncing] = useState(false);
   const location = useLocation();
   const isRoot = location.pathname === "/";
 
@@ -83,6 +92,28 @@ export default function App() {
   }, [location.pathname]);
 
   useEffect(() => {
+    applyTheme(theme);
+  }, [theme]);
+
+  useEffect(() => {
+    if (!isThemeBouncing) {
+      return;
+    }
+
+    const timer = window.setTimeout(() => setIsThemeBouncing(false), 600);
+    return () => window.clearTimeout(timer);
+  }, [isThemeBouncing]);
+
+  useEffect(() => {
+    const stopBounceTimer = startThemeBounceTimer(300000);
+
+    return () => {
+      stopThemeBounceTimer();
+      stopBounceTimer();
+    };
+  }, []);
+
+  useEffect(() => {
     if (!isRoot) {
       setShowTopButton(false);
       return;
@@ -97,6 +128,12 @@ export default function App() {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isRoot]);
+
+  const toggleTheme = () => {
+    setTheme((currentTheme) => (currentTheme === "dark" ? "light" : "dark"));
+    setIsThemeBouncing(true);
+    bounceThemeIcon();
+  };
 
   const LandingPage = () => (
     <>
@@ -125,6 +162,9 @@ export default function App() {
             activeSection={activeSection}
             scrollTo={scrollToSection}
             refs={{ homeRef, servicesRef, projectRef, aboutRef, contactRef }}
+            theme={theme}
+            toggleTheme={toggleTheme}
+            isThemeBouncing={isThemeBouncing}
           />
         )}
         <Routes>
