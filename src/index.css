@@ -19,6 +19,9 @@
   );
   --box-bg: #0008ff10;
   --down-rag: #27272760;
+  --skill-track: rgba(39, 39, 39, 0.2);
+  --resume-card-bg: #f3f4f6;
+  --resume-card-border: rgba(62, 62, 62, 0.68);
 }
 
 :root[data-theme="dark"] {
@@ -46,6 +49,9 @@
   --surface-3: rgba(255, 255, 255, 0.055);
   --shadow-strong: 0 18px 40px rgba(2, 8, 23, 0.38);
   --down-rag: #ffffff;
+  --skill-track: rgba(255, 255, 255, 0.16);
+  --resume-card-bg: rgba(255, 255, 255, 0.06);
+  --resume-card-border: rgba(125, 211, 252, 0.25);
 }
 
 * {
@@ -404,7 +410,7 @@ main {
   justify-content: center;
   position: relative;
 }
-@media (max-width: 1025px) {
+@media (max-width: 1300px) {
   .hero {
     /* width: min(560px, 100%); */
     width: min(390px, 100%);
@@ -1444,6 +1450,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  margin-top: 0px;
 }
 .abt-flex {
   max-width: 1440px;
@@ -1454,6 +1461,10 @@ footer {
   position: relative;
   align-items: center;
   margin: auto;
+  top: 0;
+  /* z-index: 20; */
+  margin-bottom: 0px;
+  box-shadow: 0 20px 45px rgba(37, 99, 235, 0.25);
 }
 
 .detail-page .detail-top,
@@ -1572,11 +1583,12 @@ footer {
   text-align: start;
   width: 100%;
   padding: 20px;
-  background: var(--box-bg);
+  /* background: var(--box-bg); */
   color: var(--brand-color);
   border-radius: 15px;
   border: 1px solid var(--border);
   box-shadow: var(--shadow-strong);
+ 
 }
 .detail-page .skills div p {
   font-weight: 500;
@@ -2436,6 +2448,14 @@ footer {
   .hire {
     flex: 1 1 auto;
   }
+  .theme-icon {
+    font-size: 15px;
+}
+  .hire #menu {
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 5px;
+}
 
   /* home */
   .home {
@@ -2701,9 +2721,9 @@ footer {
   /* My details  */
   .button.back-link {
     left: 5px;
-    padding: 2px 4px;
+    padding: 3px 5px;
     gap: 2px;
-    font-size: 7px;
+    font-size: 10px;
   }
   .detail-page .ppp .image-wrap {
     display: flex;

@@ -6,7 +6,7 @@ import { MdOutlineConstruction } from "react-icons/md";
 export default function BackEnd() {
   return (
     <section style={{ width: "100%" }}>
-      <div style={{ width: "100%", backgroundColor: "#c3c3c3" }}>
+      <div style={{ width: "100%", backgroundColor: "var(--bg-color)", position: "sticky", zIndex: "10", top: "0", right: "0" }}>
         <div className="abt-flex animate-slideIn">
           <Link to="/" className="button back-link">
             <HiOutlineArrowNarrowLeft /> <span>Back</span>

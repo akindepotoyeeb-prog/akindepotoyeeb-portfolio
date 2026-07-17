@@ -28,7 +28,7 @@ export default function HireMe() {
   };
   return (
     <section style={{ width: "100%" }}>
-      <div style={{ width: "100%", backgroundColor: "#c3c3c3" }}>
+      <div style={{ width: "100%", backgroundColor: "var(--bg-color)", position: "sticky", zIndex: "10", top: "0", right: "0"}}>
         <motion.div
           className="abt-flex"
           initial={{ opacity: 0, x: -20 }}

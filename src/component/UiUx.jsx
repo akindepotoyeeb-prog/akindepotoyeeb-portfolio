@@ -6,7 +6,7 @@ import { HiOutlineArrowNarrowLeft } from "react-icons/hi";
 export default function UiUx() {
   return (
     <section style={{ width: "100%" }}>
-      <div style={{ width: "100%", backgroundColor: "var(--bg-color)" }}>
+      <div style={{ width: "100%", backgroundColor: "var(--bg-color)", zIndex: "10", position: "sticky", top: "0", right: "0"}}>
         <div className="abt-flex animate-slideIn">
           <Link to="/" className="button back-link">
             <HiOutlineArrowNarrowLeft /> <span>Back</span>

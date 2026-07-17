@@ -51,13 +51,22 @@ export default function MyDetails() {
     { id: 2, name: "GitHub", grade: "Expert", color: "red" },
     { id: 3, name: "VS Code", grade: "Expert", color: "red" },
     { id: 4, name: "Postman", grade: "Intermidiate", color: "blue" },
-    { id: 5, name: "Docker", grade: "Average", color: "red" },
+    { id: 5, name: "Docker", grade: "Average", color: "green" },
     { id: 6, name: "MySQL & PostgreSQL", grade: "Expert", color: "red" },
   ];
 
   return (
     <section style={{ width: "100%" }}>
-      <div style={{ width: "100%", backgroundColor: "#c3c3c3" }}>
+      <div
+        style={{
+          width: "100%",
+          backgroundColor: "var(--bg-color)",
+          position: "sticky",
+          zIndex: "10",
+          top: "0",
+          right: "0",
+        }}
+      >
         <div className="abt-flex animate-slideIn">
           <Link to="/" className="button back-link">
             <HiOutlineArrowNarrowLeft /> <span>Back</span>
@@ -168,7 +177,7 @@ export default function MyDetails() {
                       style={{
                         width: "100%",
                         height: "4px",
-                        backgroundColor: "var(--down-rag)",
+                        backgroundColor: "var(--skill-track)",
                         borderRadius: "5px",
                         marginTop: "13px",
                         marginBottom: "6px",
@@ -205,7 +214,7 @@ export default function MyDetails() {
                       style={{
                         width: "100%",
                         height: "4px",
-                        backgroundColor: "var(--down-rag)",
+                        backgroundColor: "var(--skill-track)",
                         borderRadius: "5px",
                         marginTop: "13px",
                         marginBottom: "6px",
@@ -241,7 +250,7 @@ export default function MyDetails() {
                       style={{
                         width: "100%",
                         height: "4px",
-                        backgroundColor: "var(--down-rag)",
+                        backgroundColor: "var(--skill-track)",
                         borderRadius: "5px",
                         marginTop: "13px",
                         marginBottom: "6px",
@@ -281,11 +290,12 @@ export default function MyDetails() {
                     <span
                       style={{
                         fontSize: "10px",
-                        backgroundColor: "#e3e3e3",
+                        backgroundColor: "var(--box-bg)",
                         padding: "3px 8px",
                         borderRadius: "15px",
                         fontWeight: "bold",
                         color: tool.color,
+                        border: "var(--border)",
                       }}
                     >
                       {tool.grade}
@@ -299,16 +309,16 @@ export default function MyDetails() {
                 style={{
                   height: "fit-content",
                   marginTop: "40px",
-                  backgroundColor: "#e3e3e3",
+                  backgroundColor: "var(--resume-card-bg)",
                   padding: "4px",
-                  border: "1px dashed #3e3e3eae",
+                  border: "1px dashed var(--resume-card-border)",
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
                 }}
               >
                 <FaRegFilePdf
-                  style={{ color: "red", margin: "10px 0 10px 15px" }}
+                  style={{ color: "var(--brand-color)", margin: "10px 0 10px 15px" }}
                 />
                 <div
                   style={{
@@ -316,12 +326,13 @@ export default function MyDetails() {
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "space-between",
-                    backgroundColor: "#e3e3e3",
+                    background: "transparent",
                     margin: "auto",
                     border: "none",
+                    boxShadow: "none",
                   }}
                 >
-                  <h5 style={{ marginBottom: "3px", fontSize: "12px" }}>
+                  <h5 style={{ marginBottom: "3px", fontSize: "12px", color: "var(--text-1)" }}>
                     My — Resume
                   </h5>
                   <p
@@ -330,6 +341,7 @@ export default function MyDetails() {
                       marginBottom: "0",
                       fontSize: "14px",
                       fontWeight: "lighter",
+                      color: "var(--text-2)",
                     }}
                   >
                     click open PDF for preview
@@ -340,7 +352,7 @@ export default function MyDetails() {
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
-                    backgroundColor: "#1d4ed8",
+                    backgroundColor: "var(--brand-color)",
                     color: "white",
                     padding: "4px 8px",
                     borderRadius: "3px",
