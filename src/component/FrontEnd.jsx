@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { HiOutlineArrowNarrowLeft } from "react-icons/hi";
@@ -6,7 +5,16 @@ import { HiOutlineArrowNarrowLeft } from "react-icons/hi";
 export default function FrontEnd() {
   return (
     <section style={{ width: "100%" }}>
-      <div style={{ width: "100%", backgroundColor: "var(--bg-color)", position: "sticky", zIndex: "10", top: "0", right: "0"}}>
+      <div
+        style={{
+          width: "100%",
+          backgroundColor: "var(--bg-color)",
+          position: "sticky",
+          zIndex: "10",
+          top: "0",
+          right: "0",
+        }}
+      >
         <div className="abt-flex animate-slideIn">
           <Link to="/" className="button back-link">
             <HiOutlineArrowNarrowLeft /> <span>Back</span>
@@ -77,7 +85,32 @@ export default function FrontEnd() {
           <h4>Projects</h4>
           <div className="projectCon">
             <div className="image">
-              <img src="/images/pro-images/e-commerce-img.png" alt="e-commerce" />
+              <img src="/images/age-calculator.png" alt="age-calculator" loading="lazy" />
+              <div className="des">
+                <div>
+                  <h5>Age Calculator</h5>
+                  <p>
+                    This Age Calculator was developed to help users calculate
+                    their age based on their birth date, with their western &
+                    chinese zodiac, and shows countdonw in their upcoming
+                    birthday
+                  </p>
+                </div>
+                <a
+                  className="preview"
+                  href="https://age-calculator-c.netlify.app"
+                  target="_blank"
+                >
+                  Preview
+                </a>
+              </div>
+            </div>
+            <div className="image">
+              <img
+                src="/images/pro-images/e-commerce-img.png"
+                alt="e-commerce"
+                loading="lazy"
+              />
               <div className="des">
                 <div>
                   <h5>E-Commerce</h5>
@@ -92,22 +125,11 @@ export default function FrontEnd() {
               </div>
             </div>
             <div className="image">
-              <img src="/images/frontend.png" alt="outfit" />
-              <div className="des">
-                <div>
-                  <h5>Outfyt</h5>
-                  <p>
-                    This OutFit website is developed to help user for their
-                    outing fit.
-                  </p>
-                </div>
-                <a className="preview" href="#" target="_blank">
-                  Preview
-                </a>
-              </div>
-            </div>
-            <div className="image">
-              <img src="/images/pro-images/movieSearch-img.png" alt="movie-search" loading="eager" />
+              <img
+                src="/images/pro-images/movieSearch-img.png"
+                alt="movie-search"
+                loading="eager"
+              />
               <div className="des">
                 <div>
                   <h5>Movie Search</h5>
@@ -126,6 +148,21 @@ export default function FrontEnd() {
               </div>
             </div>
             <div className="image">
+              <img src="/images/frontend.png" alt="outfit" loading="lazy" />
+              <div className="des">
+                <div>
+                  <h5>Outfyt</h5>
+                  <p>
+                    This OutFit website is developed to help user for their
+                    outing fit.
+                  </p>
+                </div>
+                <a className="preview" href="#" target="_blank">
+                  Preview
+                </a>
+              </div>
+            </div>
+            {/* <div className="image">
               <img src="/images/full-stack.png" alt="" />
               <div className="des">
                 <div>
@@ -139,7 +176,7 @@ export default function FrontEnd() {
                   Preview
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="work-with-me animate-moveup">

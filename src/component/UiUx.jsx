@@ -6,7 +6,16 @@ import { HiOutlineArrowNarrowLeft } from "react-icons/hi";
 export default function UiUx() {
   return (
     <section style={{ width: "100%" }}>
-      <div style={{ width: "100%", backgroundColor: "var(--bg-color)", zIndex: "10", position: "sticky", top: "0", right: "0"}}>
+      <div
+        style={{
+          width: "100%",
+          backgroundColor: "var(--bg-color)",
+          zIndex: "10",
+          position: "sticky",
+          top: "0",
+          right: "0",
+        }}
+      >
         <div className="abt-flex animate-slideIn">
           <Link to="/" className="button back-link">
             <HiOutlineArrowNarrowLeft /> <span>Back</span>
@@ -81,7 +90,27 @@ export default function UiUx() {
           <h4>Projects</h4>
           <div className="projectCon">
             <div className="image">
-              <img src="/images/UIUX 2.png" alt="" />
+              <img src="/images/UIUX 2.png" alt="ui/ux-image" loading="lazy" />
+              <div className="des">
+                <div>
+                  <h5>Alfa Yahay Furniture</h5>
+                  <p>
+                    Alfa Yahay Furniture is a modern e-commerce platform that
+                    provides users with a seamless online shopping experience
+                    for furniture and home decor products.
+                  </p>
+                </div>
+                <a
+                  className="preview"
+                  href="https://www.figma.com/proto/i5oO7DALSN21evq1Pto3P6/AgroStack?node-id=2165-4718&t=Y6XgvyunDLOtIOGQ-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2165%3A4718&show-proto-sidebar=1"
+                  target="_blank"
+                >
+                  Preview
+                </a>
+              </div>
+            </div>
+            <div className="image">
+              <img src="/images/UIUX 2.png" alt="UI/UX Projects" loading="lazy" />
               <div className="des">
                 <div>
                   <h5>SkillUp-Online Learning</h5>
@@ -96,7 +125,7 @@ export default function UiUx() {
               </div>
             </div>
             <div className="image">
-              <img src="/images/frontend.png" alt="" />
+              <img src="/images/frontend.png" alt="frontend-img" loading="lazy" />
               <div className="des">
                 <div>
                   <h5>AgroStack Ecosystem</h5>
@@ -111,7 +140,7 @@ export default function UiUx() {
               </div>
             </div>
             <div className="image">
-              <img src="/images/backend.png" alt="" />
+              <img src="/images/backend.png" alt="backend-img" loading="lazy" />
               <div className="des">
                 <div>
                   <h5>Smart College Navigation App</h5>
@@ -127,7 +156,7 @@ export default function UiUx() {
               </div>
             </div>
             <div className="image">
-              <img src="/images/full-stack.png" alt="" />
+              <img src="/images/full-stack.png" alt="full-stack-img" loading="lazy" />
               <div className="des">
                 <div>
                   <h5>Full-Stack Projects</h5>

@@ -127,11 +127,11 @@ export default function About() {
             <div className="scope">
               <div className="client">
                 <p>CLIENTS</p>
-                <h2>200+</h2>
+                <h2>25+</h2>
               </div>
               <div className="project">
                 <p>PROJECTS</p>
-                <h2>52+</h2>
+                <h2>19+</h2>
               </div>
             </div>
             <Link to="/my-details"  className="button read normal">

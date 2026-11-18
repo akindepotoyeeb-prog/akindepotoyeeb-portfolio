@@ -87,29 +87,39 @@ body {
 }
 
 h1 {
+  padding: 5px;
+  border-radius: 7px;
   font-size: 40px;
   line-height: 44px;
   color: var(--text-1);
 }
 
 h2 {
+  padding: 5px;
+  border-radius: 7px;
   font-size: 46px;
   line-height: 64px;
   color: var(--text-1);
 }
 
 h4 {
+  padding: 5px;
+  border-radius: 7px;
   font-size: 20px;
   color: var(--text-1);
 }
 
 h6 {
+  padding: 5px;
+  border-radius: 7px;
   font-weight: 700;
   font-size: 12px;
 }
 
 p {
   font-size: 16px;
+  padding: 5px;
+  border-radius: 7px;
   color: var(--text-2);
   margin: 15px 0 20px 0;
 }
@@ -202,6 +212,8 @@ header {
   gap: 50px;
   display: flex;
   align-items: center;
+    padding: 5px;
+  border-radius: 7px;
 }
 
 #navbar {
@@ -337,6 +349,8 @@ header {
   font-size: 20px;
   color: var(--brand-color);
   transition: color 0.2s ease;
+    padding: 2px;
+  border-radius: 4px;
 }
 
 .theme-bounce {
@@ -725,18 +739,26 @@ marquee {
 }
 .image .des {
   text-align: start;
-  padding: 10px 0;
+  /* padding: 10px 0; */
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* position: relative; */
 }
 
-.image .des div {
-  width: 80%;
+.preview {
+  position: absolute;
+  bottom: 18px;
+  right: 15px;
+  z-index: 10;
 }
+
+/* .image .des div {
+  /* width: 80%; */
+ */
 
 .image .des h5 {
-  padding-top: 7px;
+  /* padding-top: 7px; */
   color: var(--brand-color);
   font-size: 14px;
 }
@@ -752,18 +774,21 @@ marquee {
   border: 1px solid var(--border);
   text-align: center;
   color: var(--brand-color);
+  bottom: 7px;
+  right: 10px;
   /* position: absolute;
   bottom: 20px;
   right: 10px; */
 }
 
 .image .des p {
-  padding-top: 0px;
+  padding: 0px;
   font-size: 10px;
   font-weight: 600;
   color: var(--muted-text);
   word-spacing: 3px;
   letter-spacing: 0.5px;
+  margin: 4px 0 30px 0;
 }
 /*====================================================
                     About Page
@@ -851,6 +876,7 @@ marquee {
   border-color: var(--border);
   --orbit-distance: 175px;
 }
+
 
 .about-visual .orbit-icon {
   position: absolute;
@@ -1588,7 +1614,6 @@ footer {
   border-radius: 15px;
   border: 1px solid var(--border);
   box-shadow: var(--shadow-strong);
- 
 }
 .detail-page .skills div p {
   font-weight: 500;
@@ -2269,9 +2294,10 @@ footer {
     flex-wrap: wrap;
     align-items: center;
   }
+
   .image .des p {
-    margin-bottom: 0;
-  }
+    margin: 4px 0 40px 0;
+}
   /* about */
   .about {
     max-width: 769px;
@@ -2450,12 +2476,12 @@ footer {
   }
   .theme-icon {
     font-size: 15px;
-}
+  }
   .hire #menu {
     font-size: 11px;
     font-weight: 500;
     padding: 2px 5px;
-}
+  }
 
   /* home */
   .home {
@@ -2576,6 +2602,19 @@ footer {
     transition: 0.2s ease;
     position: relative;
   }
+
+  .preview {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    z-index: 10;
+}
+
+.image .des p {
+   /* padding: 0;
+    margin: 4px 0 40px 0; */
+}
+
   /* About */
   .about .about-left {
     flex-direction: column;
@@ -2636,7 +2675,7 @@ footer {
   /*
   .about .about-right .button:hover {
     background-color: #1d4ed8;
-  }
+  } 
   */
 
   /* contact */

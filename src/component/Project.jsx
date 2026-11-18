@@ -15,7 +15,7 @@ export default function Project() {
         </h4>
         <div className="projectCon">
           <div className="image">
-            <img src="/images/UIUX 2.png" alt="" />
+            <img src="/images/UIUX 2.png" alt="UI/UX Projects" loading="lazy" />
             <div className="des">
               <div>
                 <h5>UI/UX Projects</h5>
@@ -25,14 +25,14 @@ export default function Project() {
                 </p>
               </div>
               <Link to="/uiux">
-                <div className="arrow">
+                <div className="arrow preview">
                   <HiOutlineArrowNarrowRight />
                 </div>
               </Link>
             </div>
           </div>
           <div className="image">
-            <img src="/images/frontend.png" alt="" />
+            <img src="/images/frontend.png" alt="frontend-img" loading="lazy" />
             <div className="des">
               <div>
                 <h5>Frontend Projects</h5>
@@ -42,14 +42,14 @@ export default function Project() {
                 </p>
               </div>
               <Link to="/frontend">
-                <div className="arrow">
+                <div className="arrow preview">
                   <HiOutlineArrowNarrowRight />
                 </div>
               </Link>
             </div>
           </div>
           <div className="image">
-            <img src="/images/backend.png" alt="" />
+            <img src="/images/backend.png" alt="backend-img" loading="lazy" />
             <div className="des">
               <div>
                 <h5>Backend Projects</h5>
@@ -59,7 +59,7 @@ export default function Project() {
                 </p>
               </div>
               <Link to="/backend">
-                <div className="arrow">
+                <div className="arrow preview">
                   <HiOutlineArrowNarrowRight />
                 </div>
               </Link>
@@ -80,7 +80,7 @@ export default function Project() {
                 </p>
               </div>
               <Link to="/fullstack">
-                <div className="arrow">
+                <div className="arrow preview">
                   <HiOutlineArrowNarrowRight />
                 </div>
               </Link>

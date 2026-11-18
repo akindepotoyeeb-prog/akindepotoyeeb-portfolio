@@ -1,7 +1,7 @@
 const STORAGE_KEY = "akindepo-theme";
 const THEME_ATTRIBUTE = "data-theme";
 const THEME_BOUNCE_CLASS = "theme-bounce";
-const THEME_BOUNCE_DURATION = 1000;
+const THEME_BOUNCE_DURATION = 100;
 
 export function getInitialTheme() {
   if (typeof window === "undefined") {
@@ -71,7 +71,7 @@ export function bounceThemeIcon() {
   }, THEME_BOUNCE_DURATION);
 }
 
-export function startThemeBounceTimer(intervalMs = 300000) {
+export function startThemeBounceTimer(intervalMs = 3000) {
   if (typeof window === "undefined") {
     return () => {};
   }

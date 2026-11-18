@@ -15,44 +15,8 @@ export default function BackEnd() {
         </div>
       </div>
       <div className="detail-page section-p1">
-        <div
-          style={{
-            textAlign: "center",
-            color: "var(--brand-color)",
-            backgroundColor: "var(--box-bg)",
-            margin: "20px",
-            padding: "10px",
-            borderRadius: "15px",
-            border: "1px solid var(--border)",
-          }}
-        >
-          <h1
-            style={{
-              textAlign: "center",
-              color: "var(--text-1)",
-              marginBottom: "10px",
-              padding: "10px",
-              fontSize: "30px",
-            }}
-          >
-            Under Constuction ⚒⛏
-          </h1>
-          <div
-            style={{
-              width: "200px",
-              height: "200px",
-              textAlign: "center",
-              color: "var(--brand-color)",
-              margin: "auto",
-              fontSize: "200px",
-              borderRadius: "15px",
-              border: "1px solid var(--border)",
-            }}
-          >
-            <MdOutlineConstruction />
-          </div>
-        </div>
-        {/* <div className="pro-details animate-moveup">
+        
+        <div className="pro-details animate-moveup">
           <div className="detail-top">
             <h4>Building Secure, Scalable & Reliable Backend Systems</h4>
             <p>
@@ -112,68 +76,109 @@ export default function BackEnd() {
         </div>
         <div className="pros animate-moveup">
           <h4>Projects</h4>
-          <div className="projectCon">
-            <div className="image">
-              <img src="/images/pro-images/e-commerce-img.png" alt="e-commerce" />
-              <div className="des">
-                <div>
-                  <h5>UI/UX Projects</h5>
-                  <p>
-                    Explore modern and user-focused interface designs,
-                    wireframes, prototypes, and mobile app experiences.
-                  </p>
-                </div>
-                <a className="preview" href="#" target="_blank">
-                  Preview
-                </a>
-              </div>
-            </div>
-            <div className="image">
-              <img src="/images/pro-images/weather-image.png" alt="" />
-              <div className="des">
-                <div>
-                  <h5>Frontend Projects</h5>
-                  <p>
-                    Responsive and interactive web interfaces built with clean
-                    code and smooth user experiences.
-                  </p>
-                </div>
-                <a className="preview" href="#" target="_blank">
-                  Preview
-                </a>
-              </div>
-            </div>
-            <div className="image">
-              <img src="/images/backend.png" alt="" />
-              <div className="des">
-                <div>
-                  <h5>Backend Projects</h5>
-                  <p>
-                    Secure and scalable APIs, databases, and server-side systems
-                    built for performance and reliability.
-                  </p>
-                </div>
-                <a className="preview" href="#" target="_blank">
-                  Preview
-                </a>
-              </div>
-            </div>
-            <div className="image">
-              <img src="/images/full-stack.png" alt="" />
-              <div className="des">
-                <div>
-                  <h5>Full-Stack Projects</h5>
-                  <p>
-                    Complete web applications combining modern frontend design
-                    with powerful backend functionality.
-                  </p>
-                </div>
-                <a className="preview" href="#" target="_blank">
-                  Preview
-                </a>
-              </div>
-            </div>
+
+          {/* ================== Honna remove later==================== */}
+
+          <div
+          style={{
+            textAlign: "center",
+            color: "var(--brand-color)",
+            backgroundColor: "var(--box-bg)",
+            margin: "20px",
+            padding: "10px",
+            borderRadius: "15px",
+            border: "1px solid var(--border)",
+          }}
+        >
+          <h1
+            style={{
+              textAlign: "center",
+              color: "var(--text-1)",
+              marginBottom: "10px",
+              padding: "10px",
+              fontSize: "30px",
+            }}
+          >
+            Under Constuction ⚒⛏
+          </h1>
+          <div
+            style={{
+              width: "200px",
+              height: "200px",
+              textAlign: "center",
+              color: "var(--brand-color)",
+              margin: "auto",
+              fontSize: "200px",
+              borderRadius: "15px",
+              border: "1px solid var(--border)",
+            }}
+          >
+            <MdOutlineConstruction />
           </div>
+        </div>
+
+          {/* // <div className="projectCon">
+          //   <div className="image">
+          //     <img src="/images/pro-images/e-commerce-img.png" alt="e-commerce" />
+          //     <div className="des">
+          //       <div>
+          //         <h5>UI/UX Projects</h5>
+          //         <p>
+          //           Explore modern and user-focused interface designs,
+          //           wireframes, prototypes, and mobile app experiences.
+          //         </p>
+          //       </div>
+          //       <a className="preview" href="#" target="_blank">
+          //         Preview
+          //       </a>
+          //     </div>
+          //   </div>
+          //   <div className="image">
+          //     <img src="/images/pro-images/weather-image.png" alt="" />
+          //     <div className="des">
+          //       <div>
+          //         <h5>Frontend Projects</h5>
+          //         <p>
+          //           Responsive and interactive web interfaces built with clean
+          //           code and smooth user experiences.
+          //         </p>
+          //       </div>
+          //       <a className="preview" href="#" target="_blank">
+          //         Preview
+          //       </a>
+          //     </div>
+          //   </div>
+          //   <div className="image">
+          //     <img src="/images/backend.png" alt="" />
+          //     <div className="des">
+          //       <div>
+          //         <h5>Backend Projects</h5>
+          //         <p>
+          //           Secure and scalable APIs, databases, and server-side systems
+          //           built for performance and reliability.
+          //         </p>
+          //       </div>
+          //       <a className="preview" href="#" target="_blank">
+          //         Preview
+          //       </a>
+          //     </div>
+          //   </div>
+          //   <div className="image">
+          //     <img src="/images/full-stack.png" alt="" />
+          //     <div className="des">
+          //       <div>
+          //         <h5>Full-Stack Projects</h5>
+          //         <p>
+          //           Complete web applications combining modern frontend design
+          //           with powerful backend functionality.
+          //         </p>
+          //       </div>
+          //       <a className="preview" href="#" target="_blank">
+          //         Preview
+          //       </a>
+          //     </div>
+          //   </div>
+          // </div> */}
         </div>
         <div className="work-with-me animate-moveup">
           <div>
@@ -195,7 +200,7 @@ export default function BackEnd() {
               keep your application running smoothly.
             </p>
           </div>
-        </div> */}
+        </div>
       </div>
     </section>
   );
